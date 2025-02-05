@@ -7,10 +7,23 @@ function Contact() {
     return (
         <>
             <div className="form-body" style={{
-                textAlign: 'center',
-                position: "relative",
-                top: '20px',
+                display:"flex",
+                justifyContent:"center",
+                textAlign:"center",
+                position:"relative",
+                top:"50px"
             }} >
+                <div 
+                style={{
+                    backgroundColor:"rgba(253, 245, 245, 0.906)",
+                    border:"0px",
+                    borderRadius:"5px",
+                    borderStyle:"solid",
+                    borderColor:"black",
+                    padding:"40px",
+                    textAlign:"center",
+                }}
+                >
                 <h1>Send Message</h1>
                 <form onSubmit={FormSubmit}>
                     {/* <label>Name:</label><br></br> */}
@@ -32,8 +45,8 @@ function Contact() {
                         }}
                         required></input><br></br><br></br>
                     {/* <label>Description:</label><br></br> */}
-                    <input
-                        type="text"
+                    <textbox
+                        
                         placeholder="Enter Description:"
                         style={{
 
@@ -41,7 +54,7 @@ function Contact() {
                             width: '400px',
                             fontSize: '15px',
                             top: '0px'
-                        }} required></input><br></br><br></br>
+                        }} required></textbox><br></br><br></br>
                     <button type="submit"
                         style={{
                             height: "40px",
@@ -55,6 +68,7 @@ function Contact() {
                         }}
                     >Send</button>
                 </form>
+                </div>
             </div>
         </>
     )
